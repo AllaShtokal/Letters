@@ -56,15 +56,15 @@ public class Main {
     }
 
 
-    public static int generateBetween(int min, int max) {
+    private static int generateBetween(int min, int max) {
         Random random = new Random();
         return random.nextInt((max - min) + 1) + min;
     }
 
     private static char readSymbol() {
         Scanner s = new Scanner(System.in);
-        char x = Character.toUpperCase(s.next().charAt(0));
-        return x;
+        return Character.toUpperCase(s.next().charAt(0));
+
     }
 
 
